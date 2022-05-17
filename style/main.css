@@ -658,6 +658,141 @@ nav {
 }
 
 
+/* START SECTION STYLES */
+
+.start {
+   max-width: 1440px;
+   width: 110%;
+   height: 680px;
+   max-height: 680px;
+   background-color: #121212;
+   margin-left: -109px;
+   padding-left: 109px;
+   padding-right: 109px;
+   margin-top: 300px;
+   display: flex;
+   align-items: center;
+}
+
+
+
+.start-title{
+   color: #FFFFFF;
+   font-size: 56px;
+   line-height: 66px;
+   font-weight: 400;
+}
+.start-register{
+   margin-top: 30px;
+}
+.start-img {
+   display: flex;
+   top: -450px;
+   right: -250px;
+   position: relative;
+
+}
+.start-img__left {
+   right: -110px;
+   position: absolute;
+   z-index: 1;
+}
+.start-img__right {
+   position: absolute;
+   left: -110px;
+}
+
+.start-footer {
+   display: flex;
+   padding-top: 90px;
+   justify-content: space-between;
+}
+.start-footer__text-desciption {
+   font-size: 12px;
+   max-width: 440px;
+   line-height: 30px;
+   padding-top: 40px;
+   color: #656565;
+}
+.start-footer__buttons {
+   display: flex;
+   align-items: center;
+   column-gap: 20px;
+   padding-right: 109px;
+}
+.start-footer__button {
+   max-width: 220px;
+   width: 100%;
+   padding-left: 10px;
+   height: 66px;
+   color: #FFFFFF;
+   background-color: #FF5634;
+   border: none;
+   border-radius: 14px;
+   display: flex;
+   align-items: center;
+}
+
+/* Footer section styles */
+
+.footer {
+   display: flex;
+   column-gap: 200px;
+   padding-top: 100px;
+}
+.footer-head {
+   font-size: 20px;
+   color: #121212;
+   padding-bottom: 40px;
+}
+
+.footer-text__first{
+   display: flex;
+   column-gap: 60px;
+}
+
+.plas{
+   padding-top: 30px;
+   padding-left: -50px;
+}
+.footer-list {
+   list-style: none;
+}
+.footer-item {
+   padding-bottom: 17px;
+}
+
+.footer-item a{
+   color: #656565;
+   text-decoration: none;
+   font-size: 18px;
+}
+.aviable-items {
+   display: grid;
+   column-gap: 70px;
+   row-gap: 20px;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+}
+.aviable-item {
+   display: flex;
+
+}
+.aviable-text {
+   padding-top: 30px;
+   font-size: 18px;
+   color: #121212;
+}
+.footer-foot {
+   margin: 150px auto 30px;
+   text-align: center;
+}
+.for-margin{
+   padding:  0 10px;
+}
+
+
+
 
 
 
