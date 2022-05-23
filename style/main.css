@@ -13,6 +13,7 @@
 
 .main-container{
    max-width: 1440px;
+   width: 100%;
    margin: 0 auto;
 
 }
@@ -79,14 +80,23 @@
 
 /* NAVBAR SECTION STYLES */
 
+header{
+   /* max-width: 1440px; */
+   width: 100%;
+   box-shadow: 0px 3px 12px rgba(18, 18, 18, 0.06);
+}
+
 nav {
+   max-width: 1440px;
    display: flex;
-   justify-content: space-between;
-   padding-top: 36px;
+   justify-content: space-around;
+   padding-top: 2.25rem;
    height: 120px;
    padding-left: 109px;
+   padding-right: 109px;
+   margin: 0 auto;
    /* padding-left: -109px; */
-   box-shadow: 0px 3px 12px rgba(18, 18, 18, 0.06);
+
 }
 
 .nav-items{
@@ -114,7 +124,7 @@ nav {
    margin-left: 32px;
    column-gap: 18px;
    display: flex;
-   padding-right: 109px;
+   /* margin-right: 109px; */
 }
 
 .nav-download{
@@ -133,7 +143,8 @@ nav {
 }
 
 .nav-register{
-   width: 162px;
+   max-width: 162px;
+   width: 100%;
    height: 56px;
    background-color: #FF5634;
    border: none;
@@ -143,6 +154,44 @@ nav {
 .nav-register a{
    color: #FFFFFF;
    text-decoration: none;
+}
+
+.nav-list__hidden{
+   z-index: 2;
+   top: -100px;
+   left: 100%;
+   width: 80%;
+   position: relative;
+   height: 100vh;
+   background-color: #FFFFFF;
+   visibility: hidden;
+   transition: 0.5s;
+
+}
+
+#check:checked + .nav-list__hidden{
+   visibility: visible;
+   left: 20%;
+   /* transition: all 0.5s; */
+}
+
+
+
+/* #check:checked  */
+
+.check-icon{
+   width: 80px;
+   height: 80px;
+   position: absolute;
+   top: 43px;
+   right: 0px;
+   z-index: 99;
+   display: none;
+}
+
+.list-icon{
+   width: 40px;
+   height: 40px;
 }
 
 /* HERO SECTION STYLES */
@@ -644,8 +693,8 @@ nav {
 
 }
 .check-box {
-   width: 36px;
-   height: 36px;
+   width: 2.25rem;
+   height: 2.25rem;
    background: #EEF8FF;
    border-radius: 8px;
    margin-left: auto;
@@ -837,6 +886,17 @@ nav {
 
 @media screen and (max-width: 1366px) {
 
+
+   /* NAVBAR SECTION STYLES */
+
+   nav{
+      padding-left: 30px;
+      padding-right: 30px;
+   }
+
+
+
+
    .hero-text{
       max-width: 500px;
    }
@@ -844,6 +904,47 @@ nav {
    .learn-text{
       max-width: 500px;
    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+   /* NAVBAR SECTION STYLES */
+
+   nav{
+      padding-left: 10px;
+      padding-right: 10px
+   }
+
+   .nav-actions{
+      transform: scale(0.8);
+      margin-left: 0px;
+   }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+
+   /* NAVBAR SECTION STYLES */
+
+   nav{
+      justify-content: space-between;
+      padding-left: 30px;
+   }
+
+   .nav-list{
+      display: none;
+   }
+
+   .nav-actions{
+      margin-right: 50px;
+   }
+
+   .check-icon{
+      display: block;
+   }
+
 
 }
 
