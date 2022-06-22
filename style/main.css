@@ -34,7 +34,7 @@
 .section-title {
    max-width: 515px;
    color: #121212;
-   font-size: 62px;
+   font-size: 3.875rem;
    font-weight: 700;
    line-height: 72px;
 }
@@ -159,24 +159,23 @@ nav {
 .nav-list__hidden{
    z-index: 2;
    top: -100px;
-   left: 100%;
    width: 80%;
    position: relative;
    height: 100vh;
    background-color: #FFFFFF;
-   display: none;
-   visibility: hidden;
    transition: 0.5s;
 
 }
 
-#check:checked + .nav-list__hidden{
+/* #check:checked + .nav-list__hidden{
    display: block;
    visibility: visible;
 
    left: 20%;
-   /* transition: all 0.5s; */
+   /* transition: all 0.5s;
 }
+*/
+
 
 
 
@@ -528,7 +527,6 @@ nav {
    right: 50px;
 }
 .hessle-text {
-
    padding-top: 150px;
    margin-left: auto;
    max-width: 600px;
@@ -864,30 +862,6 @@ nav {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 1366px) {
 
 
@@ -899,16 +873,56 @@ nav {
    }
 
 
+/* HERO SECTION */
 
+   .hero{
+      position: relative;
+      padding-bottom: 10px;
+   }
 
    .hero-text{
       max-width: 500px;
+      position: absolute;
+      z-index: 2;
+      
    }
 
    .learn-text{
       max-width: 500px;
    }
 
+   .hero-img{
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      opacity: 0.6;
+   }
+
+   .hero-img__bg{
+      max-width: 100%;
+   }
+
+
+   .trusted{
+      padding-top: 1120px;
+   }
+
+   /* LEARN SECTION  */
+
+   .learn-img{
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      margin-right: 0;
+   }
+
+   .hessle{
+      padding-top: 200px;
+   }
+
+   .hessle-box{
+      transform: scale(0.8);
+   }
 }
 
 @media screen and (max-width: 1200px) {
@@ -925,6 +939,30 @@ nav {
       margin-left: 0px;
    }
 
+   .wrapper{
+      padding-left: 50px;
+   }
+
+   .restaurant-logo__item-hidden{
+      display: none;
+   }
+
+   .to-left,
+   .to-right{
+      width: 40px;
+      height: 40px;
+      font-size: 2rem;
+   }
+
+   .hessle-box{
+      transform: scale(0.6);
+   }
+
+   .hessle-text{
+      transform: scale(0.7);
+      padding-top: 120px;
+   }
+
 }
 
 
@@ -939,7 +977,26 @@ nav {
 
    .nav-list{
       display: none;
+      position: absolute;
+      top: 100px;
+      text-align: right;
+      line-height: 60px;
+      /* right: 20px; */
+      left: 0;
+      padding-right: 20px;
+      font-weight: 700;
+      font-size: 2rem;
+      z-index: 99;
+      background-color: white;
+      width: 100%;
+      padding-bottom: 30px;
    }
+
+   /* #check:checked ~ .nav-list{
+      display: block;
+      position: absolute;
+      z-index: 99;
+   } */
 
    .nav-actions{
       margin-right: 50px;
@@ -949,7 +1006,291 @@ nav {
       display: block;
    }
 
+   .system-title{
+      font-size: 3rem;
+   }
+   .system-items{
+      padding-top: 50px;
+   }
+   .system-item{
+      transform: scale(0.8);
+   }
 
+   /* LEARN SECTION */
+   
+   .learn-img{
+      opacity: 0.5;
+   }
+
+   .fast-food__images{
+      display: flex;
+      flex-direction: column;
+      width: 700px;
+      align-items: flex-end;
+   }
+   .great-items{
+      padding-right: 50px;
+   }
+
+   .great-item{
+      transform: scale(0.8);
+      margin-bottom: 0;
+   }
+
+   .hessle{
+      padding-top: 100px;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .hessle-box{
+      position: relative;
+      max-width: 100%;
+      min-width: 600px;
+   }
+
+   .hessle-text{
+      margin: 0 auto;
+      margin-top: -200px;
+   }
+   
+
+ 
+}
+@media screen and (max-width: 800px) {
+   
+   .system{
+      padding-top: 100px ;
+   }
+   .system-items{
+      flex-direction: column;
+   }
+
+   .section-description{
+      color: #121212;
+   }
+
+   .learn-item__description{
+      color: #000;
+   }
+
+   .fast-food__text{
+      transform: scale(0.8);
+      padding-top: 200px;
+   }
+
+   .fast-food__action{
+      width: 180px;
+      height: 50px;
+   }
+
+   .great-items{
+      margin-top: 40px;
+      padding-right: 30px;
+   }
+
+   .hessle-box{
+      min-width: 300px;
+   }
+
+ 
+}
+@media screen and (max-width: 600px) {
+
+   /* SHARED SECTION STYLES */
+   .wrapper{
+      padding-left: 20px;
+   }
+
+   .section-subtitle{
+      font-size: 14px;
+   }
+
+   .section-title{
+      font-size: 3rem;
+      line-height: 50px;
+   }
+   .section-register, 
+   .section-download{
+      height: 50px;
+      width: 160px;
+      border-radius: 8px;
+      font-size: 14px;
+   }
+
+   
+   
+   .nav-actions{
+      transform: scale(0.6);
+      margin-right: 0px;
+   }
+
+
+   .check-icon{
+      width: 50px;
+      height: 50px;
+   }
+   
+   .hero-description{
+      color: #121212;
+   }
+
+   .hero-text{
+      margin-right: 0;
+   }
+   .statistic__item-head{
+      font-size: 2rem;
+   }
+
+   .statistic__item-body{
+      font-size: 14px;
+   }
+
+   .hero-img__bg{
+      height: 800px;
+   }
+
+   .trusted{
+      padding-top: 900px;
+   }
+
+   .learn{
+      padding-top: 30px;
+   }
+
+   .fast-food{
+      flex-direction: column ;
+   }
+
+   .fast-food__text{
+      padding-top: 70px;
+   }
+
+   .fast-food__images{
+      width: 100%;
+      align-items: center;
+   }
+   .great{
+      margin-top: -100px;
+   }
+
+   .great-items{
+      grid-template-columns: repeat(2, 1fr);
+      padding-right: 0;
+   }
+
+   .great-title{
+      font-size: 2.2rem;
+   }
+
+ 
+
+
+}
+
+@media screen and (max-width: 400px) {
+
+   .nav-actions{
+      display: none;
+   }
+
+      nav{
+         padding-left: 0;
+      }
+
+   .nav-logo{
+      transform: scale(0.8);
+   }
+
+   .nav-item{
+      font-size: 18px;
+      line-height: 30px;
+   }
+
+   .section-subtitle{
+      font-size: 14px;
+   }
+
+   .section-title{
+      font-size: 2.5rem;
+      line-height: 50px;
+   }
+
+   .section-description{
+      font-size: 12px;
+      line-height: 20px;
+   }
+
+   .section-register, 
+   .section-download{
+      height: 40px;
+      width: 140px;
+      border-radius: 8px;
+      font-size: 12px;
+   }
+
+   .learn-item{
+      transform: scale(0.8);
+   }
+
+   .system-action{
+      padding-top: 0;
+   }
+
+   .fast-food{
+      margin-top: 50px;
+   }
+   .fast-food__text{
+      padding-top: 10px;
+   }
+
+   .hessle{
+      padding-top: 0;
+   }
+   .hessle-box{
+      transform: scale(0.5);
+   }
+}
+
+@media screen and (max-width: 340px) {
+   .section-actions{
+      transform: scale(0.8);
+      margin-top: 10px;
+      /* column-gap: 20px; */
+      justify-content: space-between;
+   }
+   
+   .hero-text{
+      transform: scale(0.85);
+   }
+   
+   .hero-statistic{
+      transform: scale(0.8);
+      gap: 20px;
+      text-align: center;
+      margin-top: -50px;
+   }
+
+   .statistic__item-body{
+      color: #121212;
+   }
+
+   .section-title{
+      font-size: 2.2rem;
+   }
+
+   .hero-img__bg{
+      height: 650px;
+   }
+
+   
+   .trusted{
+      padding-top: 700px;
+   }
+
+   .great-items{
+      grid-template-columns: 1fr;
+   }
 }
 
 
