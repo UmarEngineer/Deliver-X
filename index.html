@@ -1,957 +1,1007 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS LINKS  -->
 
-   <!-- CSS LINKS  -->
+    <link rel="stylesheet" href="style/main.css" />
+    <title>Deliver X</title>
+  </head>
 
-   <link rel="stylesheet" href="style/main.css">
-   <title>Deliver X</title>
-</head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-logo">
+          <a href="index.html">
+            <img src="img/IMAGE.svg" alt="Asosiy logotip" />
+          </a>
+        </div>
 
-<body>
+        <div class="nav-items">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#hero" class="nav-link nav-active"> Asosiy </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"> Biz haqimizda </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"> Narxlar </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"> Sahifalar </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"> Savatcha(0) </a>
+            </li>
+          </ul>
 
+          <div class="nav-actions">
+            <button class="nav-download">
+              <a href="index.html" download=""> Yuklab olish </a>
+            </button>
 
+            <button class="nav-register">
+              <a href="register.html"> Ro'yhatdan o'tish </a>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <label for="check" class="check-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-list list-icon"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+          />
+        </svg>
+      </label>
+      <input type="checkbox" name="check" hidden id="check" />
 
-      <header>
-         <nav>
-            <div class="nav-logo">
-               <a href="index.html">
-                  <img src="img/IMAGE.svg" alt="Asosiy logotip">
-               </a>
-            </div>
-
-            <div class="nav-items">
-               <ul class="nav-list">
-                  <li class="nav-item ">
-                     <a href="#hero" class="nav-link nav-active">
-                        Asosiy
-                     </a>
-                  </li>
-                  <li class="nav-item">
-                     <a href="#" class="nav-link">
-                        Biz haqimizda
-                     </a>
-                  </li>
-                  <li class="nav-item">
-                     <a href="#" class="nav-link">
-                        Narxlar
-                     </a>
-                  </li>
-                  <li class="nav-item">
-                     <a href="#" class="nav-link">
-                        Sahifalar
-                     </a>
-                  </li>
-                  <li class="nav-item">
-                     <a href="#" class="nav-link">
-                        Savatcha(0)
-                     </a>
-                  </li>
-               </ul>
-
-               <div class="nav-actions">
-                  <button class="nav-download">
-                     <a href="index.html" download="">
-                        Yuklab olish
-                     </a>
-                  </button>
-
-                  <button class="nav-register">
-                     <a href="register.html">
-                        Ro'yhatdan o'tish
-                     </a>
-                  </button>
-               </div>
-            </div>
-
-         </nav>
-         <label for="check" class="check-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list list-icon" viewBox="0 0 16 16">
-               <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-            </svg>
-         </label>
-         <input type="checkbox" name="check" hidden id="check">
-
-         <div class="nav-list__hidden" hidden></div>
-      </header>
-      <div class="main-container">
-
+      <div class="nav-list__hidden" hidden></div>
+    </header>
+    <div class="main-container">
       <main>
-         <div class="wrapper">
-            <section class="hero" id="hero">
-               <div class="hero-text">
-                  <div class="section-subtitle">
-                     Taom yetkazish xizmati
-                  </div>
-                  <div class="section-title">
-                     Mazali taomlar barmoqlaringiz uchida
-                  </div>
-                  <div class="section-description hero-description">
-                     A ultricies eget condimentum sed faucibus enim maecenas variusd dolor sitegestas hendrerit et
-                     maecenas habitant mattis
-                  </div>
-                  <div class="section-actions">
-                     <button class="section-register">
-                        Restoranni ro'yxatdan o'tkazish
-                     </button>
-                     <button class="section-download">
-                        Ilovani yuklab olish
-                     </button>
-                  </div>
+        <div class="wrapper">
+          <section class="hero" id="hero">
+            <div class="hero-text">
+              <div class="section-subtitle">Taom yetkazish xizmati</div>
+              <div class="section-title">
+                Mazali taomlar barmoqlaringiz uchida
+              </div>
+              <div class="section-description hero-description">
+                A ultricies eget condimentum sed faucibus enim maecenas variusd
+                dolor sitegestas hendrerit et maecenas habitant mattis
+              </div>
+              <div class="section-actions">
+                <button class="section-register">
+                  Restoranni ro'yxatdan o'tkazish
+                </button>
+                <button class="section-download">Ilovani yuklab olish</button>
+              </div>
 
-                  <div class="hero-line"></div>
+              <div class="hero-line"></div>
 
-                  <div class="hero-statistic">
-                     <div class="hero-statistic__item">
-                        <div class="statistic__item-head">
-                           10M<span class="orange-color">+</span>
-                        </div>
-                        <div class="statistic__item-body">
-                           Mamnun mijozlar
-                        </div>
-                     </div>
-                     <div class="hero-statistic__item">
-                        <div class="statistic__item-head">
-                           500k<span class="orange-color">+</span>
-                        </div>
-                        <div class="statistic__item-body">
-                           Mavjud restoranlar
-                        </div>
-                     </div>
-                     <div class="hero-statistic__item">
-                        <div class="statistic__item-head">
-                           30M<span class="orange-color">+</span>
-                        </div>
-                        <div class="statistic__item-body">
-                           Muvaffaqiyatli yetkazib berish
-                        </div>
-                     </div>
+              <div class="hero-statistic">
+                <div class="hero-statistic__item">
+                  <div class="statistic__item-head">
+                    10M<span class="orange-color">+</span>
                   </div>
-               </div>
+                  <div class="statistic__item-body">Mamnun mijozlar</div>
+                </div>
+                <div class="hero-statistic__item">
+                  <div class="statistic__item-head">
+                    500k<span class="orange-color">+</span>
+                  </div>
+                  <div class="statistic__item-body">Mavjud restoranlar</div>
+                </div>
+                <div class="hero-statistic__item">
+                  <div class="statistic__item-head">
+                    30M<span class="orange-color">+</span>
+                  </div>
+                  <div class="statistic__item-body">
+                    Muvaffaqiyatli yetkazib berish
+                  </div>
+                </div>
+              </div>
+            </div>
 
-               <div class="hero-img">
-                  <div class="hero-img__bg">
-                     <img src="img/hero-bg.png" srcset="img/hero-bg.png 1x, img/hero-bg@2x.png 2x" width="603"
-                        height="1003" alt="Asosiy sahifa orqa foni">
-                  </div>
-                  <div class="hero-img__mobile">
-                     <img src="img/hero-mobile.png" srcset="img/hero-mobile.png 1x, img/hero-mobile@2x.png 2x"
-                        alt="Asosiy sahifa telefon rasmi">
-                  </div>
-               </div>
-            </section>
+            <div class="hero-img">
+              <div class="hero-img__bg">
+                <img
+                  src="img/hero-bg.png"
+                  srcset="img/hero-bg.png 1x, img/hero-bg@2x.png 2x"
+                  width="603"
+                  height="1003"
+                  alt="Asosiy sahifa orqa foni"
+                />
+              </div>
+              <div class="hero-img__mobile">
+                <img
+                  src="img/hero-mobile.png"
+                  srcset="img/hero-mobile.png 1x, img/hero-mobile@2x.png 2x"
+                  alt="Asosiy sahifa telefon rasmi"
+                />
+              </div>
+            </div>
+          </section>
 
-             <div class="trusted">
-               <div class="trusted-text">
-                  <span> Dunyo bo'ylab 5,000+ restoranlar bizga </span>
-                  <span class="orange-color"> Ishonishadi</span>
-               </div>
-               <div class="restaurant-logo">
-                  <div class="to-left"> < </div>
-                     <div class="restaurant-logo__item"><img src="img/restaurant.png" alt="restaurant-logo"></div>
-                     <div class="restaurant-logo__item restaurant-logo__item-hidden"><img src="img/restaurant-1.png" alt="restaurant-logo"></div>
-                     <div class="restaurant-logo__item restaurant-logo__item-hidden"><img src="img/restaurant-2.png" alt="restaurant-logo"></div>
-                     <div class="restaurant-logo__item restaurant-logo__item-hidden"><img src="img/restaurant-3.png" alt="restaurant-logo"></div>
-                  <div class="to-right"> > </div>
-               </div>
+          <div class="trusted">
+            <div class="trusted-text">
+              <span> Dunyo bo'ylab 5,000+ restoranlar bizga </span>
+              <span class="orange-color"> Ishonishadi</span>
+            </div>
+            <div class="restaurant-logo">
+              <div class="to-left"></div>
+              <div class="restaurant-logo__item">
+                <img src="img/restaurant.png" alt="restaurant-logo" />
+              </div>
+              <div class="restaurant-logo__item restaurant-logo__item-hidden">
+                <img src="img/restaurant-1.png" alt="restaurant-logo" />
+              </div>
+              <div class="restaurant-logo__item restaurant-logo__item-hidden">
+                <img src="img/restaurant-2.png" alt="restaurant-logo" />
+              </div>
+              <div class="restaurant-logo__item restaurant-logo__item-hidden">
+                <img src="img/restaurant-3.png" alt="restaurant-logo" />
+              </div>
+              <div class="to-right">></div>
+            </div>
+          </div>
+
+          <div class="line"></div>
+
+          <section class="system">
+            <div class="system__text">
+              <div class="section-subtitle">Bu qanday ishlaydi?</div>
+
+              <div class="section-title system-title">
+                Bizning oddiy, ammo samarali yetkazib berish tizimimiz
+              </div>
+
+              <div class="section-description system-description">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu
+                egestas morbi sem vulputate etiam facilisis pellentesque
+              </div>
+            </div>
+
+            <div class="system-items">
+              <div class="system-item">
+                <div class="system-item__img">
+                  <img
+                    src="img/system.png"
+                    srcset="img/system.png 1x, img/system@2x.png 2x"
+                    width="218"
+                    height="218"
+                    alt="Telefon rasmi"
+                  />
+                </div>
+                <div class="system-item__title">
+                  1. "Deliver X" da bugunning o'zida bepul hisob yarating
+                </div>
+                <div class="system-item-description">
+                  Lorem ipsum dolor sit amet consectetur adipiscing eli mattis
+                  sit phasellus mollis sit aliquam
+                </div>
+              </div>
+              <div class="system-item">
+                <div class="system-item__img">
+                  <img
+                    src="img/system-1.png"
+                    srcset="img/system-1.png 1x, img/system@2x-1.png 2x"
+                    width="218"
+                    height="218"
+                    alt="Restoran rasmi"
+                  />
+                </div>
+                <div class="system-item__title">
+                  2. Sevimli restoraningizdan buyurtma bering
+                </div>
+                <div class="system-item-description">
+                  Lorem ipsum dolor sit amet consectetur adipiscing eli mattis
+                  sit phasellus mollis sit aliquam
+                </div>
+              </div>
+              <div class="system-item">
+                <div class="system-item__img">
+                  <img
+                    src="img/system-2.png"
+                    srcset="img/system-2.png 1x, img/system@2x-2.png 2x"
+                    width="218"
+                    height="218"
+                    alt="Motosiklet rasmi"
+                  />
+                </div>
+                <div class="system-item__title">
+                  3. O'z uyingizda, muammosiz qabul qiling
+                </div>
+                <div class="system-item-description">
+                  Lorem ipsum dolor sit amet consectetur adipiscing eli mattis
+                  sit phasellus mollis sit aliquam
+                </div>
+              </div>
+            </div>
+
+            <div class="section-actions system-action">
+              <button class="section-register">
+                Restoranni ro'yxatdan o'tkazish
+              </button>
+              <button class="section-download">Ilovani yuklab olish</button>
             </div>
             <div class="line"></div>
+          </section>
 
+          <section class="learn">
+            <div class="learn-text">
+              <div class="section-title learn-title">
+                Nima uchun Deliver <span class="orange-color">X</span> restoran
+                uchun ajoyib ekanligini bilib oling
+              </div>
 
-            <section class="system">
-               <div class="system__text">
-                  <div class="section-subtitle">
-                     Bu qanday ishlaydi?
-                  </div>
+              <div class="section-description">
+                Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
+                phasellus mollis sit aliquam sit nullam
+              </div>
 
-                  <div class="section-title system-title">
-                     Bizning oddiy, ammo samarali yetkazib berish tizimimiz
+              <div class="learn-items">
+                <div class="learn-item">
+                  <div class="learn-item__logo">
+                    <img
+                      src="img/learn-logo.png"
+                      srcset="img/learn-logo.png 1x, img/learn-logo@2x.png 2x"
+                      alt="Chaqmoq rasmi"
+                    />
                   </div>
-
-                  <div class="section-description system-description">
-                     Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu egestas morbi sem vulputate etiam
-                     facilisis pellentesque
+                  <div class="learn-item__title">Tezkor yetkazib berish</div>
+                  <div class="learn-item__description">
+                    Lorem ipsum dolor sit amet consecte
                   </div>
-               </div>
-
-               <div class="system-items">
-                  <div class="system-item">
-                     <div class="system-item__img">
-                        <img src="img/system.png" srcset="img/system.png 1x, img/system@2x.png 2x" width="218"
-                           height="218" alt="Telefon rasmi">
-                     </div>
-                     <div class="system-item__title">
-                        1. "Deliver X" da bugunning o'zida bepul hisob yarating
-                     </div>
-                     <div class="system-item-description">
-                        Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam
-                     </div>
+                </div>
+                <div class="learn-item">
+                  <div class="learn-item__logo">
+                    <img
+                      src="img/learn-logo-1.png"
+                      srcset="
+                        img/learn-logo-1.png    1x,
+                        img/learn-logo@2x-1.png 2x
+                      "
+                      alt="Haydovchi rasmi"
+                    />
                   </div>
-                  <div class="system-item">
-                     <div class="system-item__img">
-                        <img src="img/system-1.png" srcset="img/system-1.png 1x, img/system@2x-1.png 2x" width="218"
-                           height="218" alt="Restoran rasmi">
-                     </div>
-                     <div class="system-item__title">
-                        2. Sevimli restoraningizdan buyurtma bering
-                     </div>
-                     <div class="system-item-description">
-                        Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam
-                     </div>
+                  <div class="learn-item__title">
+                    Sertifikatlangan haydovchilar
                   </div>
-                  <div class="system-item">
-                     <div class="system-item__img">
-                        <img src="img/system-2.png" srcset="img/system-2.png 1x, img/system@2x-2.png 2x" width="218"
-                           height="218" alt="Motosiklet rasmi">
-                     </div>
-                     <div class="system-item__title">
-                        3. O'z uyingizda, muammosiz qabul qiling
-                     </div>
-                     <div class="system-item-description">
-                        Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam
-                     </div>
+                  <div class="learn-item__description">
+                    Lorem ipsum dolor sit amet consecte
                   </div>
-               </div>
-
-               <div class="section-actions system-action">
-                  <button class="section-register">
-                     Restoranni ro'yxatdan o'tkazish
-                  </button>
-                  <button class="section-download">
-                     Ilovani yuklab olish
-                  </button>
-               </div>
-               <div class="line"></div>
-            </section>
-
-            <section class="learn">
-               <div class="learn-text">
-                  <div class="section-title learn-title">
-                     Nima uchun Deliver <span class="orange-color">X</span> restoran uchun ajoyib ekanligini bilib oling
+                </div>
+                <div class="learn-item">
+                  <div class="learn-item__logo">
+                    <img
+                      src="img/learn-logo-2.png"
+                      srcset="
+                        img/learn-logo-2.png    1x,
+                        img/learn-logo@2x-2.png 2x
+                      "
+                      alt="Chaqmoq rasmi"
+                    />
                   </div>
-
-                  <div class="section-description">
-                     Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit
-                     nullam
+                  <div class="learn-item__title">Tezkor to'lovlar</div>
+                  <div class="learn-item__description">
+                    Lorem ipsum dolor sit amet consecte
                   </div>
-
-                  <div class="learn-items">
-                     <div class="learn-item">
-                        <div class="learn-item__logo">
-                           <img src="img/learn-logo.png" srcset="img/learn-logo.png 1x, img/learn-logo@2x.png 2x"
-                              alt="Chaqmoq rasmi">
-                        </div>
-                        <div class="learn-item__title">
-                           Tezkor yetkazib berish
-                        </div>
-                        <div class="learn-item__description">
-                           Lorem ipsum dolor sit amet consecte
-                        </div>
-                     </div>
-                     <div class="learn-item">
-                        <div class="learn-item__logo">
-                           <img src="img/learn-logo-1.png" srcset="img/learn-logo-1.png 1x, img/learn-logo@2x-1.png 2x"
-                              alt="Haydovchi rasmi">
-                        </div>
-                        <div class="learn-item__title">
-                           Sertifikatlangan haydovchilar
-                        </div>
-                        <div class="learn-item__description">
-                           Lorem ipsum dolor sit amet consecte
-                        </div>
-                     </div>
-                     <div class="learn-item">
-                        <div class="learn-item__logo">
-                           <img src="img/learn-logo-2.png" srcset="img/learn-logo-2.png 1x, img/learn-logo@2x-2.png 2x"
-                              alt="Chaqmoq rasmi">
-                        </div>
-                        <div class="learn-item__title">
-                           Tezkor to'lovlar
-                        </div>
-                        <div class="learn-item__description">
-                           Lorem ipsum dolor sit amet consecte
-                        </div>
-                     </div>
-                     <div class="learn-item">
-                        <div class="learn-item__logo">
-                           <img src="img/learn-logo-3.png" srcset="img/learn-logo-3.png 1x, img/learn-logo@2x-3.png 2x"
-                              alt="Chaqmoq rasmi">
-                        </div>
-                        <div class="learn-item__title">
-                           Kam to'lovlar
-                        </div>
-                        <div class="learn-item__description">
-                           Lorem ipsum dolor sit amet consecte
-                        </div>
-                     </div>
+                </div>
+                <div class="learn-item">
+                  <div class="learn-item__logo">
+                    <img
+                      src="img/learn-logo-3.png"
+                      srcset="
+                        img/learn-logo-3.png    1x,
+                        img/learn-logo@2x-3.png 2x
+                      "
+                      alt="Chaqmoq rasmi"
+                    />
                   </div>
-               </div>
-
-               <div class="learn-img">
-                  <div class="learn-img__main">
-                     <img src="img/learn-main.png" srcset="img/learn-main.png 1x, img/learn-main@2x.png 2x"
-                        alt="learn-mobile ">
+                  <div class="learn-item__title">Kam to'lovlar</div>
+                  <div class="learn-item__description">
+                    Lorem ipsum dolor sit amet consecte
                   </div>
-                  <div class="learn-img__mobile">
-                     <img src="img/learn-mobile.png" srcset="img/learn-mobile.png 1x, img/learn-mobile@2x.png 2x"
-                        alt="learn-mobile ">
-                  </div>
-               </div>
-
-            </section>
-            <div class="section-actions system-action">
-               <button class="section-register">
-                  Restoranni ro'yxatdan o'tkazish
-               </button>
-               <button class="section-download">
-                  Ilovani yuklab olish
-               </button>
+                </div>
+              </div>
             </div>
 
+            <div class="learn-img">
+              <div class="learn-img__main">
+                <img
+                  src="img/learn-main.png"
+                  srcset="img/learn-main.png 1x, img/learn-main@2x.png 2x"
+                  alt="learn-mobile "
+                />
+              </div>
+              <div class="learn-img__mobile">
+                <img
+                  src="img/learn-mobile.png"
+                  srcset="img/learn-mobile.png 1x, img/learn-mobile@2x.png 2x"
+                  alt="learn-mobile "
+                />
+              </div>
+            </div>
+          </section>
+          <div class="section-actions system-action">
+            <button class="section-register">
+              Restoranni ro'yxatdan o'tkazish
+            </button>
+            <button class="section-download">Ilovani yuklab olish</button>
+          </div>
 
-            <section class="fast-food">
-               <div class="fast-food__text">
-                  <div class="fast-food__text-title">
-                     Mazali burger bir teginish narida
-                  </div>
-                  <div class="fast-food__text-description">
-                     Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit
-                     nullam
-                  </div>
+          <section class="fast-food">
+            <div class="fast-food__text">
+              <div class="fast-food__text-title">
+                Mazali burger bir teginish narida
+              </div>
+              <div class="fast-food__text-description">
+                Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
+                phasellus mollis sit aliquam sit nullam
+              </div>
 
-                  <button class="fast-food__action">
-                     Ilovani yuklab olish
-                  </button>
-               </div>
+              <button class="fast-food__action">Ilovani yuklab olish</button>
+            </div>
 
-               <div class="fast-food__images">
-                  <div class="fast-food__img">
-                     <img src="img/fast-food-1.png" srcset="img/fast-food-1.png 1x, img/fast-food@2x-1.png 2x"
-                        alt="Fast Food rasmi">
-                  </div>
-                  <div class="fast-food__img">
-                     <img src="img/fast-food-2.png" srcset="img/fast-food-2.png 1x, img/fast-food@2x-2.png 2x"
-                        alt="Fast Food rasmi">
-                  </div>
-                  <div class="fast-food__img">
-                     <img src="img/fast-food-3.jpg" alt="Fast Food rasmi">
-                  </div>
-                  <div class="fast-food__img">
-                     <img src="img/fast-food-4.jpg" alt="Fast Food rasmi">
-                  </div>
-                  <div class="fast-food__img fast-food__img5">
-                     <img src="img/fast-food-5.png" srcset="img/fast-food-5.png 1x, img/fast-food@2x-5.png 2x"
-                        alt="Fast Food rasmi">
-                  </div>
-                  <div class="fast-food__img">
-                     <img src="img/fast-food-6.png" srcset="img/fast-food-6.png 1x, img/fast-food@2x-6.png 2x"
-                        alt="Fast Food rasmi">
-                  </div>
-                  <div class="fast-food__img">
-                     <img src="img/fast-food-7.jpg" alt="Fast Food rasmi">
-                  </div>
-                  <div class="fast-food__img">
-                     <img src="img/fast-food-8.jpg" alt="Fast Food rasmi">
-                  </div>
-                  <div class="fast-food__img">
-                     <img src="img/fast-food-9.jpg" alt="Fast Food rasmi">
-                  </div>
-                  <div class="fast-food__img">
-                     <img src="img/fast-food-10.jpg" alt="Fast Food rasmi">
-                  </div>
-                  <div class="fast-food__img">
-                     <img src="img/fast-food-11.jpg" alt="Fast Food rasmi">
-                  </div>
-                  <div class="fast-food__img">
-                     <img src="img/fast-food-12.jpg" alt="Fast Food rasmi">
-                  </div>
+            <div class="fast-food__images">
+              <div class="fast-food__img">
+                <img
+                  src="img/fast-food-1.png"
+                  srcset="img/fast-food-1.png 1x, img/fast-food@2x-1.png 2x"
+                  alt="Fast Food rasmi"
+                />
+              </div>
+              <div class="fast-food__img">
+                <img
+                  src="img/fast-food-2.png"
+                  srcset="img/fast-food-2.png 1x, img/fast-food@2x-2.png 2x"
+                  alt="Fast Food rasmi"
+                />
+              </div>
+              <div class="fast-food__img">
+                <img src="img/fast-food-3.jpg" alt="Fast Food rasmi" />
+              </div>
+              <div class="fast-food__img">
+                <img src="img/fast-food-4.jpg" alt="Fast Food rasmi" />
+              </div>
+              <div class="fast-food__img fast-food__img5">
+                <img
+                  src="img/fast-food-5.png"
+                  srcset="img/fast-food-5.png 1x, img/fast-food@2x-5.png 2x"
+                  alt="Fast Food rasmi"
+                />
+              </div>
+              <div class="fast-food__img">
+                <img
+                  src="img/fast-food-6.png"
+                  srcset="img/fast-food-6.png 1x, img/fast-food@2x-6.png 2x"
+                  alt="Fast Food rasmi"
+                />
+              </div>
+              <div class="fast-food__img">
+                <img src="img/fast-food-7.jpg" alt="Fast Food rasmi" />
+              </div>
+              <div class="fast-food__img">
+                <img src="img/fast-food-8.jpg" alt="Fast Food rasmi" />
+              </div>
+              <div class="fast-food__img">
+                <img src="img/fast-food-9.jpg" alt="Fast Food rasmi" />
+              </div>
+              <div class="fast-food__img">
+                <img src="img/fast-food-10.jpg" alt="Fast Food rasmi" />
+              </div>
+              <div class="fast-food__img">
+                <img src="img/fast-food-11.jpg" alt="Fast Food rasmi" />
+              </div>
+              <div class="fast-food__img">
+                <img src="img/fast-food-12.jpg" alt="Fast Food rasmi" />
+              </div>
+            </div>
+          </section>
 
-               </div>
-            </section>
+          <section class="great">
+            <div class="great-text">
+              <div class="section-subtitle">Bizning xususiyatlarimiz</div>
 
-           <section class="great">
-               <div class="great-text">
-                  <div class="section-subtitle">
-                     Bizning xususiyatlarimiz
-                  </div>
+              <div class="section-title great-title">
+                Nega Deliver <span class="orange-color">X</span> mijozlar uchun
+                eng yaxshisi ekanligini bilasizmi?
+              </div>
 
-                  <div class="section-title great-title">
-                     Nega Deliver <span class="orange-color">X</span> mijozlar uchun eng yaxshisi ekanligini bilasizmi?
-                  </div>
+              <div class="section-description great-description">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu
+                egestas morbi sem vulputate etiam facilisis pellentesque
+              </div>
+            </div>
 
-                  <div class="section-description great-description">
-                     Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu egestas morbi sem vulputate etiam
-                     facilisis pellentesque
-                  </div>
-               </div>
+            <div class="great-items">
+              <div class="great-item">
+                <div class="great-item__logo">
+                  <img
+                    src="img/great-logo.png"
+                    srcset="img/great-logo.png 1x, img/great-logo@2x.png 2x"
+                    alt="Motosikl rasmi"
+                  />
+                </div>
+                <div class="great-item__title">Tezkor yetkazib berish</div>
+                <div class="great-item__description">
+                  Lorem ipsum dolor sit amet consectetur adipiscing eli mattis
+                  sit phasellus mollis sit aliquam sit nullam.
+                </div>
+              </div>
+              <div class="great-item">
+                <div class="great-item__logo">
+                  <img
+                    src="img/great-logo-1.png"
+                    srcset="img/great-logo-1.png 1x, img/great-logo@2x-1.png 2x"
+                    alt="Motosikl rasmi"
+                  />
+                </div>
+                <div class="great-item__title">Xavfsiz yetkazish</div>
+                <div class="great-item__description">
+                  Lorem ipsum dolor sit amet consectetur adipiscing eli mattis
+                  sit phasellus mollis sit aliquam sit nullam.
+                </div>
+              </div>
+              <div class="great-item">
+                <div class="great-item__logo">
+                  <img
+                    src="img/great-logo-2.png"
+                    srcset="img/great-logo-2.png 1x, img/great-logo@2x-2.png 2x"
+                    alt="Motosikl rasmi"
+                  />
+                </div>
+                <div class="great-item__title">Alohida chegirmalar</div>
+                <div class="great-item__description">
+                  Lorem ipsum dolor sit amet consectetur adipiscing eli mattis
+                  sit phasellus mollis sit aliquam sit nullam.
+                </div>
+              </div>
+              <div class="great-item">
+                <div class="great-item__logo">
+                  <img
+                    src="img/great-logo-3.png"
+                    srcset="img/great-logo-3.png 1x, img/great-logo@2x-3.png 2x"
+                    alt="Motosikl rasmi"
+                  />
+                </div>
+                <div class="great-item__title">Ko'proq idishlar</div>
+                <div class="great-item__description">
+                  Lorem ipsum dolor sit amet consectetur adipiscing eli mattis
+                  sit phasellus mollis sit aliquam sit nullam.
+                </div>
+              </div>
+              <div class="great-item">
+                <div class="great-item__logo">
+                  <img
+                    src="img/great-logo-4.png"
+                    srcset="img/great-logo-4.png 1x, img/great-logo@2x-4.png 2x"
+                    alt="Motosikl rasmi"
+                  />
+                </div>
+                <div class="great-item__title">Eksklyuziv restoranlar</div>
+                <div class="great-item__description">
+                  Lorem ipsum dolor sit amet consectetur adipiscing eli mattis
+                  sit phasellus mollis sit aliquam sit nullam.
+                </div>
+              </div>
+              <div class="great-item">
+                <div class="great-item__logo">
+                  <img
+                    src="img/great-logo-5.png"
+                    srcset="img/great-logo-5.png 1x, img/great-logo@2x-5.png 2x"
+                    alt="Motosikl rasmi"
+                  />
+                </div>
+                <div class="great-item__title">va yana ko'p narsalar!</div>
+                <div class="great-item__description">
+                  Lorem ipsum dolor sit amet consectetur adipiscing eli mattis
+                  sit phasellus mollis sit aliquam sit nullam.
+                </div>
+              </div>
+            </div>
 
-               <div class="great-items">
-                  <div class="great-item">
-                     <div class="great-item__logo">
-                        <img src="img/great-logo.png" srcset="img/great-logo.png 1x, img/great-logo@2x.png 2x"
-                           alt="Motosikl rasmi">
-                     </div>
-                     <div class="great-item__title">
-                        Tezkor yetkazib berish
-                     </div>
-                     <div class="great-item__description">
-                        Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam
-                        sit nullam.
-                     </div>
-                  </div>
-                  <div class="great-item">
-                     <div class="great-item__logo">
-                        <img src="img/great-logo-1.png" srcset="img/great-logo-1.png 1x, img/great-logo@2x-1.png 2x"
-                           alt="Motosikl rasmi">
-                     </div>
-                     <div class="great-item__title">
-                        Xavfsiz yetkazish
-                     </div>
-                     <div class="great-item__description">
-                        Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam
-                        sit nullam.
-                     </div>
-                  </div>
-                  <div class="great-item">
-                     <div class="great-item__logo">
-                        <img src="img/great-logo-2.png" srcset="img/great-logo-2.png 1x, img/great-logo@2x-2.png 2x"
-                           alt="Motosikl rasmi">
-                     </div>
-                     <div class="great-item__title">
-                        Alohida chegirmalar
-                     </div>
-                     <div class="great-item__description">
-                        Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam
-                        sit nullam.
-                     </div>
-                  </div>
-                  <div class="great-item">
-                     <div class="great-item__logo">
-                        <img src="img/great-logo-3.png" srcset="img/great-logo-3.png 1x, img/great-logo@2x-3.png 2x"
-                           alt="Motosikl rasmi">
-                     </div>
-                     <div class="great-item__title">
-                        Ko'proq idishlar
-                     </div>
-                     <div class="great-item__description">
-                        Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam
-                        sit nullam.
-                     </div>
-                  </div>
-                  <div class="great-item">
-                     <div class="great-item__logo">
-                        <img src="img/great-logo-4.png" srcset="img/great-logo-4.png 1x, img/great-logo@2x-4.png 2x"
-                           alt="Motosikl rasmi">
-                     </div>
-                     <div class="great-item__title">
-                        Eksklyuziv restoranlar
-                     </div>
-                     <div class="great-item__description">
-                        Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam
-                        sit nullam.
-                     </div>
-                  </div>
-                  <div class="great-item">
-                     <div class="great-item__logo">
-                        <img src="img/great-logo-5.png" srcset="img/great-logo-5.png 1x, img/great-logo@2x-5.png 2x"
-                           alt="Motosikl rasmi">
-                     </div>
-                     <div class="great-item__title">
-                        va yana ko'p narsalar!
-                     </div>
-                     <div class="great-item__description">
-                        Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam
-                        sit nullam.
-                     </div>
-                  </div>
-               </div>
+            <div class="section-actions system-action">
+              <button class="section-register">
+                Restoranni ro'yxatdan o'tkazish
+              </button>
+              <button class="section-download">Ilovani yuklab olish</button>
+            </div>
+          </section>
 
-               <div class="section-actions system-action">
+          <section class="hessle">
+            <div class="hessle-img">
+              <div class="hessle-box">
+                <div class="hessle-box__mobile">
+                  <img
+                    src="img/hassle-mobile.png"
+                    srcset="
+                      img/hassle-mobile.png    1x,
+                      img/hassle-mobile@2x.png 2x
+                    "
+                    alt=""
+                  />
+                </div>
+                <div class="hessle-box__men">
+                  <img
+                    src="img/hassle-men-1.png"
+                    srcset="img/hassle-men-1.png 1x, img/hassle-men@2x-1.png 2x"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="hessle-text">
+              <div class="hessle-title">Muammosiz restoran boshqaruvi</div>
+              <div class="hessle-description">
+                Bibendum consectetur eu quis dignissim purus quis felis urna in
+                enim elementum tellus amet ullamcorper ante in sollicitudin
+                sollicitudin pellentesque
+              </div>
+
+              <div class="hessle-items">
+                <div class="hessle-item">
+                  <div class="hessle-item__logo">
+                    <img
+                      src="img/hassle-logo.png"
+                      srcset="img/hassle-logo.png 1x, img/hassle-logo@2x.png 2x"
+                      alt=""
+                    />
+                  </div>
+                  <div class="flex-item-text">
+                    <div class="hessle-item__title">
+                      Buyurtmalarni oson nazorat qilish
+                    </div>
+                    <div class="hessle-item__description">
+                      Aliquam vestibulum morbi blandit cursus risus atomol
+                      ultrices proin gravida hendrerit lectusa.
+                    </div>
+                  </div>
+                </div>
+                <div class="hessle-item">
+                  <div class="hessle-item__logo">
+                    <img
+                      src="img/hassle-logo-1.png"
+                      srcset="
+                        img/hassle-logo-1.png    1x,
+                        img/hassle-logo@2x-1.png 2x
+                      "
+                      alt=""
+                    />
+                  </div>
+                  <div class="hessle-item-text">
+                    <div class="hessle-item__title">POS integratsiyasi</div>
+                    <div class="hessle-item__description">
+                      Aliquam vestibulum morbi blandit cursus risus atomol
+                      ultrices proin gravida hendrerit lectusa.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="super">
+            <div class="super-text">
+              <div class="super-title">Mijozlar uchun ham juda qulay</div>
+              <div class="super-description">
+                Bibendum consectetur eu quis dignissim purus quis felis urna in
+                enim elementum tellus amet ullamcorper ante in sollicitudin
+                sollicitudin pellentesque
+              </div>
+
+              <div class="super-items">
+                <div class="super-item">
+                  <div class="super-item__logo">
+                    <img
+                      src="img/super-logo.png"
+                      srcset="img/super-logo.png 1x, img/super-logo@2x.png 2x"
+                      alt=""
+                    />
+                  </div>
+                  <div class="flex-item-text">
+                    <div class="super-item__title">Ilova orqali buyurtma</div>
+                    <div class="super-item__description">
+                      Aliquam vestibulum morbi blandit cursus risus atomol
+                      ultrices proin gravida hendrerit lectusa.
+                    </div>
+                  </div>
+                </div>
+                <div class="super-item">
+                  <div class="super-item__logo">
+                    <img
+                      src="img/super-logo-1.png"
+                      srcset="
+                        img/super-logo-1.png    1x,
+                        img/super-logo@2x-1.png 2x
+                      "
+                      alt=""
+                    />
+                  </div>
+                  <div class="super-item-text">
+                    <div class="super-item__title">Buyurtma kuzatuvi</div>
+                    <div class="super-item__description">
+                      Aliquam vestibulum morbi blandit cursus risus atomol
+                      ultrices proin gravida hendrerit lectusa.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="super-img">
+              <div class="super-box">
+                <div class="super-box__mobile">
+                  <img
+                    src="img/super-main.png"
+                    srcset="img/super-main.png 1x, img/super-main@2x.png 2x"
+                    alt=""
+                  />
+                </div>
+                <div class="super-box__men">
+                  <img
+                    src="img/super-main-1.png"
+                    srcset="img/super-main-1.png 1x, img/super-main@2x-1.png 2x"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="clients">
+            <div class="clients-text">
+              <div class="client-text__title">Mijozlarimiz biz haqimizda</div>
+              <div class="client-text">
+                <div class="client-text__description">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit semper
+                  dalar elementum tempus hac
+                </div>
+
+                <div class="section-actions clients-action">
                   <button class="section-register">
-                     Restoranni ro'yxatdan o'tkazish
+                    Restoranni ro'yxatdan o'tkazish
                   </button>
-                  <button class="section-download">
-                     Ilovani yuklab olish
-                  </button>
-               </div>
-            </section>
+                  <button class="section-download">Ilovani yuklab olish</button>
+                </div>
+              </div>
+            </div>
 
-            <section class="hessle">
-               <div class="hessle-img">
-                  <div class="hessle-box">
-                     <div class="hessle-box__mobile">
-                        <img src="img/hassle-mobile.png" srcset="img/hassle-mobile.png 1x, img/hassle-mobile@2x.png 2x"
-                           alt="">
-                     </div>
-                     <div class="hessle-box__men">
-                        <img src="img/hassle-men-1.png" srcset="img/hassle-men-1.png 1x, img/hassle-men@2x-1.png 2x"
-                           alt="">
-                     </div>
+            <div class="client-boxes">
+              <div class="client-box">
+                <div class="client-box__header">
+                  <div class="client-img">
+                    <img
+                      src="img/customer.png"
+                      srcset="img/customer.png 1x, img/customer@2x.png 2x"
+                      alt="John Carter"
+                    />
                   </div>
-               </div>
-
-               <div class="hessle-text">
-                  <div class="hessle-title">
-                     Muammosiz restoran boshqaruvi
+                  <div class="client-name-text">
+                    <div class="client-name">John Carter</div>
+                    <div class="client-position">Echo park</div>
                   </div>
-                  <div class="hessle-description">
-                     Bibendum consectetur eu quis dignissim purus quis felis urna in enim elementum tellus amet
-                     ullamcorper ante in sollicitudin sollicitudin pellentesque
+                  <div class="check-box"></div>
+                </div>
+                <div class="client-description">
+                  “Lorem ipsum dolor sit ametolil col consectetur adipiscing
+                  lectus a nunc mauris scelerisque
+                </div>
+              </div>
+
+              <div class="client-box">
+                <div class="client-box__header">
+                  <div class="client-img">
+                    <img
+                      src="img/customer-1.png"
+                      srcset="img/customer-1.png 1x, img/customer@2x-1.png 2x"
+                      alt="Sophie Moore"
+                    />
                   </div>
-
-                  <div class="hessle-items">
-                     <div class="hessle-item">
-                        <div class="hessle-item__logo">
-                           <img src="img/hassle-logo.png" srcset="img/hassle-logo.png 1x, img/hassle-logo@2x.png 2x"
-                              alt="">
-                        </div>
-                        <div class="flex-item-text">
-                           <div class="hessle-item__title">
-                              Buyurtmalarni oson nazorat qilish
-                           </div>
-                           <div class="hessle-item__description">
-                              Aliquam vestibulum morbi blandit cursus risus atomol ultrices proin gravida hendrerit
-                              lectusa.
-                           </div>
-                        </div>
-                     </div>
-                     <div class="hessle-item">
-                        <div class="hessle-item__logo">
-                           <img src="img/hassle-logo-1.png"
-                              srcset="img/hassle-logo-1.png 1x, img/hassle-logo@2x-1.png 2x" alt="">
-                        </div>
-                        <div class="hessle-item-text">
-                           <div class="hessle-item__title">
-                              POS integratsiyasi
-                           </div>
-                           <div class="hessle-item__description">
-                              Aliquam vestibulum morbi blandit cursus risus atomol ultrices proin gravida hendrerit
-                              lectusa.
-                           </div>
-                        </div>
-                     </div>
+                  <div class="client-name-text">
+                    <div class="client-name">Sophie Moore</div>
+                    <div class="client-position">Hollywood Hills</div>
                   </div>
-               </div>
-            </section>
+                  <div class="check-box"></div>
+                </div>
+                <div class="client-description">
+                  “Lorem ipsum dolor sit ametolil col consectetur adipiscing
+                  lectus a nunc mauris scelerisque
+                </div>
+              </div>
 
-           <!-- <section class="super">
-               <div class="super-text">
-                  <div class="super-title">
-                     Mijozlar uchun ham juda qulay
+              <div class="client-box">
+                <div class="client-box__header">
+                  <div class="client-img">
+                    <img
+                      src="img/customer-2.png"
+                      srcset="img/customer-2.png 1x, img/customer@2x-2.png 2x"
+                      alt="Matt Cannon"
+                    />
                   </div>
-                  <div class="super-description">
-                     Bibendum consectetur eu quis dignissim purus quis felis urna in enim elementum tellus amet
-                     ullamcorper ante in sollicitudin sollicitudin pellentesque
+                  <div class="client-name-text">
+                    <div class="client-name">Matt Cannon</div>
+                    <div class="client-position">Little Tokyo</div>
                   </div>
+                  <div class="check-box"></div>
+                </div>
+                <div class="client-description">
+                  “Lorem ipsum dolor sit ametolil col consectetur adipiscing
+                  lectus a nunc mauris scelerisque
+                </div>
+              </div>
 
-                  <div class="super-items">
-                     <div class="super-item">
-                        <div class="super-item__logo">
-                           <img src="img/super-logo.png" srcset="img/super-logo.png 1x, img/super-logo@2x.png 2x"
-                              alt="">
-                        </div>
-                        <div class="flex-item-text">
-                           <div class="super-item__title">
-                              Ilova orqali buyurtma
-                           </div>
-                           <div class="super-item__description">
-                              Aliquam vestibulum morbi blandit cursus risus atomol ultrices proin gravida hendrerit
-                              lectusa.
-                           </div>
-                        </div>
-                     </div>
-                     <div class="super-item">
-                        <div class="super-item__logo">
-                           <img src="img/super-logo-1.png" srcset="img/super-logo-1.png 1x, img/super-logo@2x-1.png 2x"
-                              alt="">
-                        </div>
-                        <div class="super-item-text">
-                           <div class="super-item__title">
-                              Buyurtma kuzatuvi
-                           </div>
-                           <div class="super-item__description">
-                              Aliquam vestibulum morbi blandit cursus risus atomol ultrices proin gravida hendrerit
-                              lectusa.
-                           </div>
-                        </div>
-                     </div>
+              <div class="client-box">
+                <div class="client-box__header">
+                  <div class="client-img">
+                    <img
+                      src="img/customer-3.png"
+                      srcset="img/customer-3.png 1x, img/customer@2x-3.png 2x"
+                      alt="Lily Woods"
+                    />
                   </div>
-               </div>
-
-               <div class="super-img">
-                  <div class="super-box">
-                     <div class="super-box__mobile">
-                        <img src="img/super-main.png" srcset="img/super-main.png 1x, img/super-main@2x.png 2x" alt="">
-                     </div>
-                     <div class="super-box__men">
-                        <img src="img/super-main-1.png" srcset="img/super-main-1.png 1x, img/super-main@2x-1.png 2x"
-                           alt="">
-                     </div>
+                  <div class="client-name-text">
+                    <div class="client-name">Lily Woods</div>
+                    <div class="client-position">Meilsore Aveneu</div>
                   </div>
-               </div>
+                  <div class="check-box"></div>
+                </div>
+                <div class="client-description">
+                  “Lorem ipsum dolor sit ametolil col consectetur adipiscing
+                  lectus a nunc mauris scelerisque
+                </div>
+              </div>
 
-            </section> -->
-
-            <!-- <section class="clients">
-               <div class="clients-text">
-                  <div class="client-text__title">
-                     Mijozlarimiz biz haqimizda
+              <div class="client-box">
+                <div class="client-box__header">
+                  <div class="client-img">
+                    <img
+                      src="img/customer-4.png"
+                      srcset="img/customer-4.png 1x, img/customer@2x-4.png 2x"
+                      alt="Andy Smith"
+                    />
                   </div>
-                  <div class="client-text">
-                     <div class="client-text__description">
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac
-                     </div>
-
-                     <div class="section-actions clients-action">
-                        <button class="section-register">
-                           Restoranni ro'yxatdan o'tkazish
-                        </button>
-                        <button class="section-download">
-                           Ilovani yuklab olish
-                        </button>
-                     </div>
+                  <div class="client-name-text">
+                    <div class="client-name">Andy Smith</div>
+                    <div class="client-position">Koreatown</div>
                   </div>
-               </div>
+                  <div class="check-box"></div>
+                </div>
+                <div class="client-description">
+                  “Lorem ipsum dolor sit ametolil col consectetur adipiscing
+                  lectus a nunc mauris scelerisque
+                </div>
+              </div>
 
-               <div class="client-boxes">
-
-                  <div class="client-box">
-                     <div class="client-box__header">
-                                             <div class="client-img">
-                        <img src="img/customer.png" srcset="img/customer.png 1x, img/customer@2x.png 2x" alt="John Carter">
-                     </div>
-                     <div class="client-name-text">
-                        <div class="client-name">
-                           John Carter
-                        </div>
-                        <div class="client-position">
-                           Echo park
-                        </div>
-                     </div>
-                     <div class="check-box">
-                     </div>
-
-                     </div>
-                     <div class="client-description">
-                        “Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a nunc mauris scelerisque
-                     </div>
-
+              <div class="client-box">
+                <div class="client-box__header">
+                  <div class="client-img">
+                    <img
+                      src="img/customer-5.png"
+                      srcset="img/customer-5.png 1x, img/customer@2x-5.png 2x"
+                      alt="Emily Williams"
+                    />
                   </div>
-
-                  <div class="client-box">
-                     <div class="client-box__header">
-                                             <div class="client-img">
-                        <img src="img/customer-1.png" srcset="img/customer-1.png 1x, img/customer@2x-1.png 2x" alt="Sophie Moore">
-                     </div>
-                     <div class="client-name-text">
-                        <div class="client-name">
-                           Sophie Moore
-                        </div>
-                        <div class="client-position">
-                           Hollywood Hills
-                        </div>
-                     </div>
-                     <div class="check-box"></div>
+                  <div class="client-name-text">
+                    <div class="client-name">Emily Williams</div>
+                    <div class="client-position">Chinatown</div>
                   </div>
-                     <div class="client-description">
-                        “Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a nunc mauris scelerisque
-                     </div>
+                  <div class="check-box"></div>
+                </div>
+                <div class="client-description">
+                  “Lorem ipsum dolor sit ametolil col consectetur adipiscing
+                  lectus a nunc mauris scelerisque
+                </div>
+              </div>
+            </div>
+          </section>
 
-                  </div>
+          <section class="start">
+            <div class="start-text">
+              <div class="section-title start-title">
+                Bugundan ko'proq mijozlarni jalb qilishni boshlang
+              </div>
+              <div class="section-description start-description">
+                Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
+                phasellus mollis sit aliquam sit nullam neque ultrices.
+              </div>
+              <button class="section-register start-register">
+                Restoranni ro'yxatdan o'tkazish
+              </button>
+            </div>
+            <div class="start-img">
+              <div class="start-img__left">
+                <img
+                  src="img/attracting-1.png"
+                  srcset="img/attracting-1.png 1x, img/attracting@2x-1.png 2x"
+                  alt="O'ng tomonga og'gan telefon rasmi"
+                />
+              </div>
+              <div class="start-img__right">
+                <img
+                  src="img/attracting.png"
+                  srcset="img/attracting.png 1x, img/attracting@2x.png 2x"
+                  alt="Chap tomonga og'gan telefon rasmi"
+                />
+              </div>
+            </div>
+          </section>
 
-                  <div class="client-box">
-                     <div class="client-box__header">
-                                             <div class="client-img">
-                        <img src="img/customer-2.png" srcset="img/customer-2.png 1x, img/customer@2x-2.png 2x" alt="Matt Cannon">
-                     </div>
-                     <div class="client-name-text">
-                        <div class="client-name">
-                           Matt Cannon
-                        </div>
-                        <div class="client-position">
-                           Little Tokyo
-                        </div>
-                     </div>
-                     <div class="check-box"></div>
-                  </div>
-                     <div class="client-description">
-                        “Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a nunc mauris scelerisque
-                     </div>
+          <section class="start-footer">
+            <div class="start-footer__text">
+              <img
+                src="img/Logo.png"
+                srcset="img/Logo.png 1x, img/Logo@2x.png 2x"
+                alt="Logotip"
+              />
+              <div class="start-footer__text-desciption">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
+                eiusmod tempor incididunt ut.
+              </div>
+            </div>
+            <div class="start-footer__buttons">
+              <button class="start-footer__button">
+                <img
+                  src="img/app-store.svg"
+                  id="app-store"
+                  alt=""
+                  width="30"
+                  height="30"
+                />
+                <span for="app-store">App Store dan yuklab olish</span>
+              </button>
+              <button class="start-footer__button">
+                <img
+                  src="img/google.svg"
+                  id="google-store"
+                  alt=""
+                  width="30"
+                  height="30"
+                />
+                <span for="google-store">Play market dan yuklab olish</span>
+              </button>
+            </div>
+          </section>
+          <div class="line foot-line"></div>
 
-                  </div>
-
-                  <div class="client-box">
-                     <div class="client-box__header">
-                                             <div class="client-img">
-                        <img src="img/customer-3.png" srcset="img/customer-3.png 1x, img/customer@2x-3.png 2x" alt="Lily Woods">
-                     </div>
-                     <div class="client-name-text">
-                        <div class="client-name">
-                           Lily Woods
-                        </div>
-                        <div class="client-position">
-                           Meilsore Aveneu
-                        </div>
-                     </div>
-                     <div class="check-box"></div>
-                  </div>
-                     <div class="client-description">
-                        “Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a nunc mauris scelerisque
-                     </div>
-
-                  </div>
-
-                  <div class="client-box">
-                     <div class="client-box__header">
-                                             <div class="client-img">
-                        <img src="img/customer-4.png" srcset="img/customer-4.png 1x, img/customer@2x-4.png 2x" alt="Andy Smith">
-                     </div>
-                     <div class="client-name-text">
-                        <div class="client-name">
-                           Andy Smith
-                        </div>
-                        <div class="client-position">
-                           Koreatown
-                        </div>
-                     </div>
-                     <div class="check-box"></div>
-                  </div>
-                     <div class="client-description">
-                        “Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a nunc mauris scelerisque
-                     </div>
-
-                  </div>
-
-                  <div class="client-box">
-                     <div class="client-box__header">
-                                             <div class="client-img">
-                        <img src="img/customer-5.png" srcset="img/customer-5.png 1x, img/customer@2x-5.png 2x" alt="Emily Williams">
-                     </div>
-                     <div class="client-name-text">
-                        <div class="client-name">
-                           Emily Williams
-                        </div>
-                        <div class="client-position">
-                           Chinatown
-                        </div>
-                     </div>
-                     <div class="check-box"></div>
-                  </div>
-                     <div class="client-description">
-                        “Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a nunc mauris scelerisque
-                     </div>
-
-                  </div>
-               </div>
-            </section> -->
-
-            <!-- <section class="start">
-               <div class="start-text">
-                  <div class="section-title start-title">
-                     Bugundan ko'proq mijozlarni jalb qilishni boshlang
-                  </div>
-                  <div class="section-description start-description">
-                     Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam neque ultrices.
-                  </div>
-                  <button class="section-register start-register">
-                     Restoranni ro'yxatdan o'tkazish
-                  </button>
-               </div>
-               <div class="start-img">
-                  <div class="start-img__left">
-                     <img src="img/attracting-1.png" srcset="img/attracting-1.png 1x, img/attracting@2x-1.png 2x" alt="O'ng tomonga og'gan telefon rasmi">
-                  </div>
-                  <div class="start-img__right">
-                     <img src="img/attracting.png" srcset="img/attracting.png 1x, img/attracting@2x.png 2x" alt="Chap tomonga og'gan telefon rasmi">
-                  </div>
-
-               </div>
-            </section> -->
-
-            <!-- <section class="start-footer">
-               <div class="start-footer__text">
-                  <img src="img/Logo.png" srcset="img/Logo.png 1x, img/Logo@2x.png 2x" alt="Logotip">
-                  <div class="start-footer__text-desciption">
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut.
-                  </div>
-               </div>
-               <div class="start-footer__buttons">
-                  <button class="start-footer__button">
-                     <img src="img/app-store.svg" id="app-store" alt="" width="30" height="30" >
-                     <span for="app-store">App Store dan yuklab olish</span>
-                  </button>
-                  <button class="start-footer__button">
-                     <img src="img/google.svg" id="google-store" alt="" width="30" height="30" >
-                     <span  for="google-store">Play market dan yuklab olish</span>
-                  </button>
-               </div>
-
-            </section>
-            <div class="line foot-line"></div> -->
-
-            <!-- <footer class="footer">
-               <div class="footer-text__first">
-                  <div class="footer-text">
-                     <div class="footer-head">
-                        Menu
-                     </div>
-                     <ul class="footer-list">
-                        <li class="footer-item">
-                           <a href="#">
-                              Home
-                           </a>
-                        </li>
-                        <li class="footer-item">
-                           <a href="#">
-                              About
-                           </a>
-                        </li>
-                        <li class="footer-item">
-                           <a href="#">
-                              Contact
-                           </a>
-                        </li>
-                        <li class="footer-item">
-                           <a href="#">
-                              Blog
-                           </a>
-                        </li>
-                        <li class="footer-item">
-                           <a href="#">
-                              Blog posts
-                           </a>
-                        </li>
-
-                     </ul>
-                  </div>
-                  <div class="footer-text">
-                     <div class="footer-head plas">
-
-                     </div>
-                     <ul class="footer-list">
-                        <li class="footer-item">
-                           <a href="#">
-                              Plans
-                           </a>
-                        </li>
-                        <li class="footer-item">
-                           <a href="#">
-                              Plan single
-                           </a>
-                        </li>
-                        <li class="footer-item">
-                           <a href="#">
-                              Register
-                           </a>
-                        </li>
-
-                     </ul>
-                  </div>
-               </div>
-               <div class="footer-text">
-                  <div class="footer-head">
-                     Ulitily pages
-                  </div>
+          <footer class="footer">
+            <div class="footer-textt">
+              <div class="footer-text__first">
+                <div class="footer-text">
+                  <div class="footer-head">Menu</div>
                   <ul class="footer-list">
-                     <li class="footer-item">
-                        <a href="#">
-                           Start here
-                        </a>
-                     </li>
-                     <li class="footer-item">
-                        <a href="#">
-                           Styleguide
-                        </a>
-                     </li>
-                     <li class="footer-item">
-                        <a href="#">
-                           Password protected
-                        </a>
-                     </li>
-                     <li class="footer-item">
-                        <a href="#">
-                           404 Not Found
-                        </a>
-                     </li>
-                     <li class="footer-item">
-                        <a href="#">
-                           Licences
-                        </a>
-                     </li>
-                     <li class="footer-item">
-                        <a href="#">
-                           Changelog
-                        </a>
-                     </li>
+                    <li class="footer-item">
+                      <a href="#"> Home </a>
+                    </li>
+                    <li class="footer-item">
+                      <a href="#"> About </a>
+                    </li>
+                    <li class="footer-item">
+                      <a href="#"> Contact </a>
+                    </li>
+                    <li class="footer-item">
+                      <a href="#"> Blog </a>
+                    </li>
+                    <li class="footer-item">
+                      <a href="#"> Blog posts </a>
+                    </li>
                   </ul>
-               </div>
-               <div class="footer-text">
-                  <div class="footer-head">
-                     Aviable in
-                  </div>
-                  <div class="aviable-items">
-                     <div class="aviable-item">
-                        <img src="img/footer-logo.png" srcset="img/footer-logo.png 1x, img/footer-logo@2x.png 2x" alt="">
-                        <div class="aviable-text">San Francisco, CA</div>
-                     </div>
-                     <div class="aviable-item">
-                        <img src="img/footer-logo-1.png" srcset="img/footer-logo-1.png 1x, img/footer-logo@2x-1.png 2x" alt="">
-                        <div class="aviable-text">Los Angeles, CA</div>
-                     </div>
-                     <div class="aviable-item">
-                        <img src="img/footer-logo-3.png" srcset="img/footer-logo-3.png 1x, img/footer-logo@2x-3.png 2x" alt="">
-                        <div class="aviable-text">New york, NW</div>
-                     </div>
-                     <div class="aviable-item">
-                        <img src="img/footer-logo-2.png" srcset="img/footer-logo-2.png 1x, img/footer-logo@2x-2.png 2x" alt="">
-                        <div class="aviable-text">Seattle, WA</div>
-                     </div>
-                  </div>
-               </div>
+                </div>
+                <div class="footer-text">
+                  <div class="footer-head plas"></div>
+                  <ul class="footer-list">
+                    <li class="footer-item">
+                      <a href="#"> Plans </a>
+                    </li>
+                    <li class="footer-item">
+                      <a href="#"> Plan single </a>
+                    </li>
+                    <li class="footer-item">
+                      <a href="#"> Register </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-text">
+                <div class="footer-head">Ulitily pages</div>
+                <ul class="footer-list">
+                  <li class="footer-item">
+                    <a href="#"> Start here </a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#"> Styleguide </a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#"> Password protected </a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#"> 404 Not Found </a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#"> Licences </a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#"> Changelog </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-text">
+              <div class="footer-head">Aviable in</div>
+              <div class="aviable-items">
+                <div class="aviable-item">
+                  <img
+                    src="img/footer-logo.png"
+                    srcset="img/footer-logo.png 1x, img/footer-logo@2x.png 2x"
+                    alt=""
+                  />
+                  <div class="aviable-text">San Francisco, CA</div>
+                </div>
+                <div class="aviable-item">
+                  <img
+                    src="img/footer-logo-1.png"
+                    srcset="
+                      img/footer-logo-1.png    1x,
+                      img/footer-logo@2x-1.png 2x
+                    "
+                    alt=""
+                  />
+                  <div class="aviable-text">Los Angeles, CA</div>
+                </div>
+                <div class="aviable-item">
+                  <img
+                    src="img/footer-logo-3.png"
+                    srcset="
+                      img/footer-logo-3.png    1x,
+                      img/footer-logo@2x-3.png 2x
+                    "
+                    alt=""
+                  />
+                  <div class="aviable-text">New york, NW</div>
+                </div>
+                <div class="aviable-item">
+                  <img
+                    src="img/footer-logo-2.png"
+                    srcset="
+                      img/footer-logo-2.png    1x,
+                      img/footer-logo@2x-2.png 2x
+                    "
+                    alt=""
+                  />
+                  <div class="aviable-text">Seattle, WA</div>
+                </div>
+              </div>
+            </div>
+          </footer>
 
-            </footer> -->
-
-            <!-- <div class="footer-foot">
-               Copyright &copy; Deliver X by <span class="orange-color for-margin"> BRIX Templates</span> -Powered by <span class="orange-color for-margin"><a href="#" class="orange-color">okho</a></span>
-            </div> -->
-
-         </div>
-
-
+          <div class="footer-foot">
+            Copyright &copy; Deliver X by
+            <span class="orange-color for-margin"> BRIX Templates</span>
+            -Powered by
+            <span class="orange-color for-margin"
+              ><a href="https://github.com/umarengineer" class="orange-color"
+                >okho</a
+              ></span
+            >
+          </div>
+        </div>
       </main>
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   </div>
-
-
-   <script src="js/app.js"></script>
-
-</body>
-
+    <script src="js/app.js"></script>
+  </body>
 </html>
